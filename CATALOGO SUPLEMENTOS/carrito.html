@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Carrito - Suplementos</title>
+        <link rel="stylesheet" href="estilos.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-custom">
+                <!-- Logo a la izquierda -->
+                <div class="navbar-logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="img/logo.png" alt="Logo FT.Suplementos" class="logo-circular" title="FT Suplementos" />
+                    </a>
+                </div>
+                <!-- Menú centrado -->
+                <div class="navbar-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="marcas.html">Marcas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <!-- Carrito a la derecha -->
+                <div class="navbar-cart">
+                    <a href="carrito.html" class="carrito-icono"> 🛒 <span id="carrito-cantidad">0</span> </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="carrito-section">
+                <h1>Tu Carrito</h1>
+                <div class="carrito-contenido">
+                    <!-- Aquí se mostrarán los productos del carrito con JS -->
+                    <div class="carrito-vacio">
+                        <p>Tu carrito está vacío.</p>
+                        <a href="catalogo.html" class="boton">Ver Catálogo</a>
+                    </div>
+                </div>
+
+                <!-- Opciones de envío y pago -->
+                <div class="carrito-opciones">
+                    <div class="carrito-envio">
+                        <label for="opcion-envio"><strong>Tipo de envío:</strong></label>
+                        <select id="opcion-envio" name="opcion-envio">
+                            <option value="" selected disabled>Elegí una opción</option>
+                            <option value="retiro">Retirar</option>
+                            <option value="consultar">Consultar envío</option>
+                        </select>
+                    </div>
+                    <div class="carrito-pago">
+                        <label for="opcion-pago"><strong>Medio de pago:</strong></label>
+                        <select id="opcion-pago" name="opcion-pago">
+                            <option value="" selected disabled>Elegí una opción</option>
+                            <option value="efectivo">Efectivo</option>
+                            <option value="transferencia">Transferencia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="carrito-total">
+                    <span>Total productos:</span>
+                    <span id="carrito-total-precio">$0</span>
+                </div>
+                <div class="carrito-total" style="margin-top: 8px">
+                    <span>Envío:</span>
+                    <span id="carrito-envio-precio">$0</span>
+                </div>
+                <div class="carrito-total" style="font-size: 1.25rem; margin-top: 8px">
+                    <span><strong>Total a pagar:</strong></span>
+                    <span id="carrito-total-final">$0</span>
+                </div>
+                <div class="carrito-acciones">
+                    <a href="catalogo.html" class="boton">Seguir comprando</a>
+                    <button class="boton" id="finalizar-compra">Finalizar compra</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="img/logo.png" alt="FT.Suplementos" class="logo-circular" title="FT Suplementos" />
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="marcas.html">Marcas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/5491144029317" target="_blank" title="WhatsApp">
+                        <img src="img/WhatsApp.svg.png" alt="WhatsApp" />
+                    </a>
+                    <a href="mailto:ft.suplementos0304@gmail.com" title="Mail">
+                        <img src="img/gmail.png" alt="Mail" />
+                    </a>
+                    <a href="https://www.instagram.com/suple.ft/" target="_blank" title="Instagram">
+                        <img src="img/Instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="https://www.tiktok.com/@suplementosft?lang=es-419" target="_blank" title="TikTok">
+                        <img src="img/TikTok.png" alt="TikTok" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2023 FT.Suplementos. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

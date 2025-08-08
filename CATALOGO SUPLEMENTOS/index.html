@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Inicio - Suplementos</title>
+        <link rel="stylesheet" href="estilos.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+        <style>
+            /* Centrar los bloques de categorías en el index */
+            .categorias-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 0 auto 40px auto;
+                padding: 0 24px;
+            }
+            .categorias-inicio {
+                display: flex;
+                gap: 40px;
+                justify-content: center;
+                align-items: stretch;
+            }
+            @media (max-width: 900px) {
+                .categorias-inicio {
+                    flex-direction: column;
+                    gap: 24px;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <script src="script.js"></script>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-custom">
+                <!-- Logo a la izquierda -->
+                <div class="navbar-logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="img/logo.png" alt="Logo FT.Suplementos" class="logo-circular" title="FT Suplementos" />
+                    </a>
+                </div>
+                <!-- Menú centrado -->
+                <div class="navbar-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="marcas.html">Marcas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <!-- Carrito a la derecha -->
+                <div class="navbar-cart">
+                    <a href="carrito.html" class="carrito-icono"> 🛒 <span id="carrito-cantidad">0</span> </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Banner principal -->
+        <section class="inicio" style="padding-bottom: 0">
+            <img src="img/banner-principal.png" alt="Banner principal" class="banner" />
+        </section>
+
+        <!-- Cartel de Categorías -->
+        <div style="display: flex; justify-content: center; margin: 40px 0 10px 0">
+            <span
+                style="
+                    display: inline-block;
+                    background: #4caf50;
+                    color: #fff;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    padding: 12px 40px;
+                    border-radius: 8px;
+                    letter-spacing: 1px;
+                    text-align: center;
+                "
+            >
+                CATEGORÍAS
+            </span>
+        </div>
+
+        <!-- Categorías principales -->
+        <section class="categorias-section">
+            <div class="catalogo categorias-inicio">
+                <a href="catalogo.html#combos" class="producto-link">
+                    <div class="producto">
+                        <img src="img/Categoria-combos.png" alt="Combos" />
+                        <div class="nombre">Combos</div>
+                    </div>
+                </a>
+                <a href="catalogo.html#creatinas" class="producto-link">
+                    <div class="producto">
+                        <img src="img/Creatina.png" alt="Creatinas" />
+                        <div class="nombre">Creatinas</div>
+                    </div>
+                </a>
+                <a href="catalogo.html#proteinas" class="producto-link">
+                    <div class="producto">
+                        <img src="img/Proteina.png" alt="Proteínas" />
+                        <div class="nombre">Proteínas</div>
+                    </div>
+                </a>
+                <!-- <a href="catalogo.html#otros" class="producto-link" hidden>
+            <div class="producto">
+                <img src="img/Otros.png" alt="Otros" />
+                <div class="nombre">Otros</div>
+            </div>
+        </a>-->
+            </div>
+        </section>
+
+        <!-- Mini banner de marcas -->
+        <h2 style="text-align: center; margin: 60px 0 10px 0">TRABAJAMOS CON LAS MEJORES MARCAS</h2>
+        <section style="max-width: 1200px; margin: 0 auto 40px auto">
+            <div class="banner" style="background: #e5e7eb; padding: 30px 0">
+                <div style="display: flex; justify-content: center; gap: 60px; align-items: center; flex-wrap: wrap">
+                    <a href="marcas.html#star-nutrition" class="marca-link">
+                        <img src="img/StarNutrition.png" alt="Star Nutrition" />
+                    </a>
+                    <a href="marcas.html#ena" class="marca-link">
+                        <img src="img/Ena.png" alt="Ena" />
+                    </a>
+                    <!--
+            <a href="marcas.html#gold-nutrition" class="marca-link">
+                <img src="img/GoldNutrition.png" alt="Gold Nutrition" />
+            </a>
+            <a href="marcas.html#body-advance" class="marca-link">
+                <img src="img/BodyAdvance.png" alt="Body Advance" />
+            </a>
+            -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="img/logo.png" alt="FT.Suplementos" class="logo-circular" title="FT Suplementos" />
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="marcas.html">Marcas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/5491144029317" target="_blank" title="WhatsApp">
+                        <img src="img/WhatsApp.svg.png" alt="WhatsApp" />
+                    </a>
+                    <a href="mailto:ft.suplementos0304@gmail.com" title="Mail">
+                        <img src="img/gmail.png" alt="Mail" />
+                    </a>
+                    <a href="https://www.instagram.com/suple.ft/" target="_blank" title="Instagram">
+                        <img src="img/Instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="https://www.tiktok.com/@suplementosft?lang=es-419" target="_blank" title="TikTok">
+                        <img src="img/TikTok.png" alt="TikTok" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2023 FT.Suplementos. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
