@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Inicio - Suplementos</title>
+        <link rel="stylesheet" href="estilos.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    </head>
+    <script src="script.js"></script>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-custom">
+                <!-- Logo a la izquierda -->
+                <div class="navbar-logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="img/logo.png" alt="Logo FT.Suplementos" class="logo-circular" title="FT Suplementos" />
+                    </a>
+                </div>
+                <!-- Menú centrado -->
+                <div class="navbar-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="marcas.html">Marcas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <!-- Carrito a la derecha -->
+                <div class="navbar-cart">
+                    <a href="carrito.html" class="carrito-icono"> 🛒 <span id="carrito-cantidad">0</span> </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido del producto -->
+        <section class="pagina-producto">
+            <div class="producto-imagen">
+                <img id="imagenProducto" src="img/ena-2lb-chocolate.png" alt="Whey Protein Ena 2 Lb" />
+            </div>
+            <div class="producto-info">
+                <h1>Whey Protein TruMade Ena 5 Lb</h1>
+
+                <p class="descripcion-producto">
+                    La Whey Protein TruMade de Ena es una excelente fuente de proteínas de suero, diseñada para promover el desarrollo
+                    muscular y mejorar la recuperación post-entrenamiento. Su fórmula de rápida absorción y deliciosos sabores es ideal para
+                    acompañar tu rutina diaria.
+                </p>
+
+                <!-- ...dentro de .producto-info... -->
+                <p class="sabor">Seleccioná tu sabor:</p>
+                <ul class="sabores-fila">
+                    <li onclick="seleccionarSabor('chocolate', this)">Chocolate</li>
+                    <li onclick="seleccionarSabor('vainilla', this)">Vainilla</li>
+                </ul>
+                <input type="hidden" id="sabor-elegido" value="" />
+                <div class="precio-producto">$83.500</div>
+                <button class="boton" id="btnAgregarCarrito" onclick="return false;" disabled>Agregar al carrito</button>
+            </div>
+        </section>
+
+        <!-- Script para cambiar la imagen por sabor -->
+        <script>
+            function cambiarSabor(sabor) {
+                const imagen = document.getElementById("imagenProducto");
+                imagen.classList.add("fade-out");
+                setTimeout(() => {
+                    imagen.src = `img/ena-2lb-${sabor}.png`;
+                    imagen.classList.remove("fade-out");
+                    imagen.classList.add("fade-in");
+                    setTimeout(() => imagen.classList.remove("fade-in"), 300);
+                }, 300);
+            }
+        </script>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="img/logo.png" alt="FT.Suplementos" class="logo-circular" title="FT Suplementos" />
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="marcas.html">Marcas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/5491144029317" target="_blank" title="WhatsApp">
+                        <img src="img/WhatsApp.svg.png" alt="WhatsApp" />
+                    </a>
+                    <a href="mailto:ft.suplementos0304@gmail.com" title="Mail">
+                        <img src="img/gmail.png" alt="Mail" />
+                    </a>
+                    <a href="https://www.instagram.com/suple.ft/" target="_blank" title="Instagram">
+                        <img src="img/Instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="https://www.tiktok.com/@suplementosft?lang=es-419" target="_blank" title="TikTok">
+                        <img src="img/TikTok.png" alt="TikTok" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2023 FT.Suplementos. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script>
+            const imagenesPorSabor = {
+                chocolate: "img/ena-2lb-chocolate.png",
+                vainilla: "img/ena-2lb-vainilla.png",
+            };
+
+            function seleccionarSabor(sabor, elemento) {
+                // Cambia la imagen
+                const imagen = document.getElementById("imagenProducto");
+                imagen.src = imagenesPorSabor[sabor];
+
+                // Guarda el sabor en el input oculto
+                document.getElementById("sabor-elegido").value = sabor;
+
+                // Resalta el sabor seleccionado
+                document.querySelectorAll(".sabores-fila li").forEach((li) => li.classList.remove("selected"));
+                elemento.classList.add("selected");
+
+                // Habilita el botón y actualiza el onclick con los datos correctos
+                const btn = document.getElementById("btnAgregarCarrito");
+                btn.disabled = false;
+                btn.onclick = function () {
+                    agregarAlCarrito("whey-truemade-2lb", "Whey Protein TruMade Ena 2 Lb", 39000, imagenesPorSabor[sabor], sabor);
+                };
+            }
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

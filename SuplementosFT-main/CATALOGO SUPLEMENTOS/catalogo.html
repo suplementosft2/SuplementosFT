@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Inicio - Suplementos</title>
+        <link rel="stylesheet" href="estilos.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    </head>
+    <script src="script.js"></script>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-custom">
+                <!-- Logo a la izquierda -->
+                <div class="navbar-logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="img/logo.png" alt="Logo FT.Suplementos" class="logo-circular" title="FT Suplementos" />
+                    </a>
+                </div>
+                <!-- Menú centrado -->
+                <div class="navbar-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="marcas.html">Marcas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <!-- Carrito a la derecha -->
+                <div class="navbar-cart">
+                    <a href="carrito.html" class="carrito-icono"> 🛒 <span id="carrito-cantidad">0</span> </a>
+                </div>
+            </nav>
+        </header>
+
+        <h1>Catálogo de Productos</h1>
+
+        <!-- Menú interno del catálogo -->
+        <nav class="submenu">
+            <a href="#combos">Combos</a>
+            <a href="#creatinas">Creatinas</a>
+            <a href="#proteinas">Proteínas</a>
+            <!-- <a href="#otros">Otros</a> -->
+        </nav>
+
+        <section id="combos">
+            <h2>COMBOS</h2>
+            <div class="catalogo">
+                <!-- Combo 1: x3 Creatina 300gr Doypack -->
+                <a href="combo1.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/promo-creatina.png" alt="Combo x3 Creatina 300gr Doypack" />
+                        <div class="nombre">x3 Creatina 300gr Doypack</div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+                <!-- Combo 2: Creatina 300gr Doypack + Whey Protein Doypack 2 Lb -->
+                <a href="combo2.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/promo2-chocolate.png" alt="Creatina 300gr Doypack + Whey Protein Doypack 2 Lb" />
+                        <div class="nombre">Creatina 300gr Doypack + Whey Protein Doypack 2 Lb</div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+                <!-- Combo 3: Creatina 1kg Pote + Whey Protein Zipper Pack 3kg -->
+                <a href="combo3.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/promo3-chocolate.png" alt="Creatina 1kg Pote + Whey Protein Zipper Pack 3kg" />
+                        <div class="nombre">Creatina 1kg Pote + Whey Protein Zipper Pack 3kg</div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+                <!-- Combo 4: x2 Creatinas 300gr Doypack + 2 Whey Protein Doypack 2 Lb -->
+                <a href="combo4.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/promo4.png" alt="x2 Creatinas 300gr Doypack + 2 Whey Protein Doypack 2 Lb" />
+                        <div class="nombre">x2 Creatinas 300gr Doypack + 2 Whey Protein Doypack 2 Lb</div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+            </div>
+        <section id="creatinas">
+    <h2>CREATINAS</h2>
+    <div class="catalogo">
+        <a href="creatina-doypack.html" class="producto-link">
+            <div class="producto">
+                <img src="img/ceratina doy.png" alt="Creatina 300gr" />
+                <div class="nombre">Creatina Doypack 300gr</div>
+                <button class="ver-btn">Ver</button>
+            </div>
+        </a>
+        <a href="creatina-pote-300gr.html" class="producto-link">
+            <div class="producto">
+                <img src="img/Creatina pote.png" alt="Creatina 300gr pote" />
+                <div class="nombre">Creatina Pote 300gr</div>
+                <button class="ver-btn">Ver</button>
+            </div>
+        </a>
+        <a href="creatina-pote-500gr.html" class="producto-link">
+            <div class="producto">
+                <img src="img/Creatina 500gr.png" alt="Creatina 500gr" />
+                <div class="nombre">Creatina Pote 500gr</div>
+                <button class="ver-btn">Ver</button>
+            </div>
+        </a>
+        <a href="creatina-micronizada-300gr.html" class="producto-link">
+            <div class="producto">
+                <img src="img/ena-creatina.png" alt="Creatina 300gr Micronizada" />
+                <div class="nombre">Creatina Doypack 300gr</div>
+                <button class="ver-btn">Ver</button>
+            </div>
+        </a>
+        <a href="creatina-pote-1kg.html" class="producto-link">
+            <div class="producto">
+                <img src="img/Creatina1kg.png" alt="Creatina 1kg" />
+                <div class="nombre">Creatina Pote 1kg</div>
+                <button class="ver-btn">Ver</button>
+            </div>
+        </a>
+    </div>
+</section>
+
+        <!-- Sección Proteínas -->
+        <section id="proteinas">
+            <h2>PROTEÍNAS</h2>
+            <div class="catalogo">
+                <a href="producto-whey.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/whey-chocolate.png" alt="Whey Protein" />
+                        <div class="nombre">Whey Protein Doypack 2 Lb</div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+                <a href="producto-whey-pote.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/whey-pote-chocolate.png" alt="Whey Protein Pote" />
+                        <div
+                            class="nombre"
+                            style="min-height: 48px; display: flex; flex-direction: column; justify-content: center; align-items: center"
+                        >
+                            Whey Protein Pote 2 Lb
+                        </div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+                <a href="platinum-whey.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/platinum-chocolate.png" alt="Platinum Whey Protein" />
+                        <div class="nombre">Platinum Whey Protein Doypack 3 Kg</div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+                <a href="whey-truemade-pote.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/ena-5lb-chocolate.png" alt="Whey Protein" />
+                        <div class="nombre">Whey Protein Truemade Pote 2 Lb</div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+                <a href="whey-truemade.html" class="producto-link">
+                    <div class="producto">
+                        <img src="img/ena-2lb-chocolate.png" alt="Whey Protein Truemade Doypack" />
+                        <div class="nombre">Whey Protein Truemade Doypack 5 Lb</div>
+                        <button class="ver-btn">Ver</button>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección Otros -->
+        <!--   <section id="otros">
+            <h2>Otros</h2>
+            <div class="catalogo">
+                <div class="producto">
+                    <img src="img/shaker.png" alt="Shaker" />
+                    <div class="nombre">Shaker 700ml</div>
+                    <button class="ver-btn">Ver</button>
+                </div>
+                <div class="producto">
+                    <img src="img/shaker.png" alt="Straps" />
+                    <div class="nombre">Straps</div>
+                    <button class="ver-btn">Ver</button>
+                </div>
+            </div> 
+        </section> -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" title="Ir al inicio">
+                        <img src="img/logo.png" alt="FT.Suplementos" class="logo-circular" title="FT Suplementos" />
+                    </a>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="marcas.html">Marcas</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/5491144029317" target="_blank" title="WhatsApp">
+                        <img src="img/WhatsApp.svg.png" alt="WhatsApp" />
+                    </a>
+                    <a href="mailto:ft.suplementos0304@gmail.com" title="Mail">
+                        <img src="img/gmail.png" alt="Mail" />
+                    </a>
+                    <a href="https://www.instagram.com/suple.ft/" target="_blank" title="Instagram">
+                        <img src="img/Instagram.png" alt="Instagram" />
+                    </a>
+                    <a href="https://www.tiktok.com/@suplementosft?lang=es-419" target="_blank" title="TikTok">
+                        <img src="img/TikTok.png" alt="TikTok" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2023 FT.Suplementos. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,818 @@
+/* ===========================
+   ESTILOS USADOS EN TU SITIO
+   =========================== */
+/* ===========================
+   ESTRUCTURA GENERAL
+   =========================== */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Catálogo: cuadrícula alineada y productos iguales */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.producto-link,
+.producto {
+    width: 290px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.producto {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 20px 12px 16px 12px;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.producto img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.nombre {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.ver-btn {
+    margin-top: auto;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2d8cff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.ver-btn:hover {
+    background: #1a5fb4;
+}
+/* ===========================
+   NAVBAR
+   =========================== */
+.navbar-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f2937;
+    padding: 24px 40px;
+    min-height: 80px;
+    box-sizing: border-box;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 40px;
+    flex: 1;
+    justify-content: center;
+}
+.navbar-links a {
+    color: #f9fafb;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.15rem;
+    transition: color 0.3s;
+    padding: 6px 12px;
+}
+.navbar-links a:hover {
+    color: #4ade80;
+}
+.navbar-cart {
+    min-width: 80px;
+    text-align: right;
+}
+.carrito-icono {
+    color: #f9fafb;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.carrito-icono:hover {
+    color: #4ade80;
+}
+
+/* ===========================
+   SUBMENÚ CATÁLOGO
+   =========================== */
+.submenu {
+    text-align: center;
+    margin: 30px 0;
+}
+.submenu a {
+    margin: 0 10px;
+    padding: 10px 18px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #111827;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+.submenu a:hover {
+    background-color: #d1d5db;
+}
+
+/* ===========================
+   TÍTULOS
+   =========================== */
+h1,
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #222;
+}
+
+/* ===========================
+   CATÁLOGO DE PRODUCTOS
+   =========================== */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+}
+.producto {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.producto img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.nombre {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+.precio {
+    color: #10b981;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* ===========================
+   BOTÓN VER PRODUCTO
+   =========================== */
+.ver-btn {
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.3s ease;
+}
+.ver-btn:hover {
+    background-color: #555;
+}
+
+/* ===========================
+   ENLACES DE PRODUCTO
+   =========================== */
+.producto-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: opacity 0.2s;
+}
+.producto-link:hover {
+    opacity: 0.95;
+}
+
+/* ===========================
+   DROPDOWN MENÚ MODERNO
+   =========================== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: transparent;
+    color: #f9fafb;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    margin: 0 20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+.dropdown-content a {
+    color: #1f2937;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+.dropdown-content a:hover {
+    background-color: #f3f4f6;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    color: #4ade80;
+}
+
+/* ===========================
+   PÁGINA DE PRODUCTO INDIVIDUAL
+   =========================== */
+.pagina-producto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.producto-imagen {
+    flex: 1 1 300px;
+    text-align: center;
+}
+.producto-imagen img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+.producto-info {
+    flex: 1 1 400px;
+}
+.producto-info h1 {
+    margin-top: 0;
+    font-size: 28px;
+}
+.descripcion-producto {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+}
+.descripcion-producto h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.descripcion-producto p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.sabor {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.sabores-fila {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.sabores-fila li {
+    background-color: #f2f2f2;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sabores-fila li:hover {
+    background-color: #ddd;
+}
+.sabores {
+    list-style: none;
+    padding: 0;
+}
+.sabores li {
+    background-color: #eee;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.sabores li:hover {
+    background-color: #ccc;
+}
+.precio-producto {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #4caf50;
+}
+
+/* ===========================
+   ANIMACIONES PARA CAMBIO DE IMAGEN
+   =========================== */
+.fade-out {
+    opacity: 0;
+}
+.fade-in {
+    opacity: 1;
+}
+
+/* ===========================
+   BANNER Y PRESENTACIÓN (INDEX)
+   =========================== */
+.inicio {
+    text-align: center;
+    padding: 40px 20px;
+}
+.inicio p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.banner {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.boton {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.boton:hover {
+    background-color: #45a049;
+}
+
+/* Categorías solo para el inicio */
+.categorias-section {
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto 40px auto;
+    padding: 0 24px;
+}
+.categorias-inicio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 40px;
+}
+.categorias-inicio .producto {
+    padding: 36px 18px;
+    border-radius: 22px;
+    min-height: 280px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.categorias-inicio .producto img {
+    max-height: 240px;
+    border-radius: 16px;
+}
+.categorias-inicio .nombre {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+/* ===========================
+   FOOTER PROFESIONAL
+   =========================== */
+footer {
+    background: #1f2937;
+    color: #f9fafb;
+    padding: 32px 10px 18px 10px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 40px;
+    border-top: 3px solid #4caf50;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto 12px auto;
+    gap: 20px;
+}
+.footer-logo img {
+    height: 38px;
+    filter: brightness(1.2);
+}
+.footer-links {
+    display: flex;
+    gap: 28px;
+    margin-left: 130px; /* Ajustá este valor para moverlo apenas a la derecha */
+}
+.footer-links a {
+    color: #f9fafb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.08rem;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #4ade80;
+}
+.footer-social a {
+    margin: 0 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer-social img {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.footer-social a:hover img {
+    box-shadow: 0 4px 16px #4caf50aa;
+    transform: scale(1.12);
+}
+.footer-copy {
+    text-align: center;
+    font-size: 0.98rem;
+    color: #bdbdbd;
+    margin-top: 18px;
+    letter-spacing: 1px;
+}
+
+/* ===========================
+   CARRITO DE COMPRAS
+   =========================== */
+.carrito-section {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    padding: 32px 24px 24px 24px;
+}
+.carrito-section h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #222;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+.carrito-contenido {
+    min-height: 180px;
+}
+.carrito-vacio {
+    text-align: center;
+    color: #888;
+    margin: 40px 0;
+}
+.carrito-producto {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 18px 0;
+}
+.carrito-producto img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: #f9fafb;
+}
+.carrito-info {
+    flex: 1;
+}
+.carrito-info h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: #1f2937;
+}
+.carrito-precio {
+    color: #10b981;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.carrito-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.carrito-cantidad button {
+    background: #e5e7eb;
+    border: none;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.carrito-cantidad button:hover {
+    background: #4caf50;
+    color: #fff;
+}
+.carrito-eliminar {
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.carrito-eliminar:hover {
+    background: #b91c1c;
+}
+.carrito-total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 28px 0 0 0;
+    color: #222;
+}
+.carrito-acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 24px;
+}
+.boton {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.boton:hover {
+    background-color: #45a049;
+}
+
+/* ===========================
+   MARCAS (BANNER MINI)
+   =========================== */
+.marca-link img {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+.marca-link:hover img {
+    transform: scale(1.07) translateY(-6px);
+    box-shadow: 0 8px 24px rgba(76, 175, 80, 0.18);
+    cursor: pointer;
+}
+
+/* ===========================
+   CONTACTO PROFESIONAL
+   =========================== */
+.contacto-section {
+    max-width: 500px;
+    margin: 50px auto 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    padding: 36px 28px 28px 28px;
+    text-align: center;
+}
+.contacto-section h1 {
+    margin-bottom: 18px;
+    color: #222;
+    font-size: 2.1rem;
+}
+.contacto-section p {
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+.contacto-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 30px 0 20px 0;
+    align-items: center;
+}
+.contacto-opciones a,
+.contacto-opciones .contacto-instagram {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f3f4f6;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+.contacto-opciones a:hover {
+    background: #4caf50;
+    color: #fff;
+}
+.contacto-opciones img {
+    width: 32px;
+    height: 32px;
+}
+.contacto-info {
+    margin-top: 24px;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* ===========================
+   MEDIA QUERIES
+   =========================== */
+@media (max-width: 768px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media (max-width: 700px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+    .footer-links {
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sabores-fila li.selected {
+    background: #4caf50;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #388e3c;
+}
+
+.sabor-sticker {
+    display: inline-block;
+    background: #4caf50;
+    color: #fff;
+    border-radius: 8px;
+    padding: 2px 10px;
+    margin-left: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+/* Logo circular */
+.logo-circular {
+    width: 48px; /* o el tamaño que prefieras */
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4caf50; /* Opcional: borde verde */
+}
+/* Logo circular más grande solo en el header */
+.navbar-logo .logo-circular {
+    width: 56px;
+    height: 56px;
+}
+
+.logo-circular {
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.logo-circular:hover {
+    box-shadow: 0 4px 16px #4caf50aa;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.footer-logo .logo-circular {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4caf50;
+    filter: brightness(1.2);
+}
+
+/* Banner principal más grande */
+.banner {
+    width: 100%;
+    max-width: 1200px; /* Antes era 800px */
+    height: auto;
+    min-height: 320px; /* Ajustá este valor según lo grande que lo quieras */
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: block;
+}
+.marca-link img {
+    height: 320px;
+    max-width: 320px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+.carrito-opciones {
+    display: flex;
+    gap: 32px;
+    margin: 32px 0 16px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.carrito-opciones label {
+    margin-right: 10px;
+}
+.carrito-opciones select {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+.carrito-total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 8px 0 0 0;
+    color: #222;
+}
